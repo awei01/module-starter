@@ -2,12 +2,13 @@
 
 Use webpack, karma and babel to generate es6 modules
 
-
 ## Instructions
 
 1. Create your folder for your module: `mkdir my-module`
 1. Enter your folder: `cd my-module`
-1. Initialize git project: `git init`
-1. Set this repository as `upstream`: `git remote add upstream <this repo url>`
-1. Fetch this repo: `git fetch upstream`
-1. Checkout branch: `git checkout upstream/master`
+1. Clone this project into your folder: `git clone <this git url> ./`
+1. Delete the git reference: `rm -rf .git`
+1. Reinitialize git: `git init`
+1. Set the origin for your module: `git remote add origin <your git url>`
+1. Do some coding
+1. Build your module for deployment: `npm build`

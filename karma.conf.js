@@ -1,4 +1,4 @@
-var webpackConfig = require('./webpack.conf.js')
+var webpackConfig = require('./webpack.config.js')
 
 // Karma configuration
 // Generated on Fri Jun 16 2017 11:07:47 GMT-0400 (EDT)
@@ -17,7 +17,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './tests/index.js'
+      './tests/boot.js'
     ],
 
 
@@ -30,7 +30,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        './tests/index.js': ['webpack']
+        './tests/boot.js': ['webpack']
     },
 
 

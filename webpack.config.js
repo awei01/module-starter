@@ -1,17 +1,13 @@
 var path = require('path')
 
-function resolve (dir) {
-  return path.join(__dirname, dir)
-}
-
 module.exports = {
+  devtool: 'sourcemap',
   resolve: {
     extensions: ['.js'],
     alias: {
       '@': resolve('src')
     }
   },
-  devtool: 'sourcemap',
   module: {
     rules: [
       {
@@ -30,4 +26,8 @@ module.exports = {
       }
     ]
   }
+}
+
+function resolve (dir) {
+  return path.join(__dirname, dir)
 }

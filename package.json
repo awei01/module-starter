@@ -2,8 +2,11 @@
   "name": "module-starter",
   "version": "0.0.0",
   "description": "Template for module development using webpack, karma and babel",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "clean": "node ./scripts/clean.js",
+    "dist": "node ./scripts/build.js",
+    "build": "npm run clean && npm run dist",
     "test": "karma start ./karma.conf.js"
   },
   "author": "",
@@ -19,6 +22,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-2": "^6.24.1",
+    "chalk": "^2.0.1",
     "eslint": "^4.0.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
@@ -32,7 +36,9 @@
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
-    "webpack": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^2.6.1",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {}
 }
