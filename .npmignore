@@ -3,6 +3,9 @@ src
 tests
 scripts
 
+.babelrc
+.eslintrc
+
 karma.conf.js
 webpack.config.js
 build.config.js
