@@ -2,7 +2,7 @@
   "name": "module-starter",
   "version": "0.0.0",
   "description": "Template for module development using webpack, karma and babel",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "clean": "node ./scripts/clean.js",
     "dist": "node ./scripts/build.js",
