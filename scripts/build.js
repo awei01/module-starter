@@ -11,5 +11,12 @@ webpack(config, function (err, result) {
   if (err) {
     throw err
   }
-  console.log(chalk.cyan('Build complete [' + config.output.path + '/' + config.output.filename + ']\n'))
+  process.stdout.write(result.toString({
+    colors: true,
+    modules: false,
+    children: false,
+    chunks: false,
+    chunkModules: false
+  }) + '\n\n')
+  console.log(chalk.cyan('Build complete\n'))
 })
